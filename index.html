@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architect's Tea Break 🧡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="blueprint-grid"></div>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="badge">Connection Review v1.2</div>
+            <h1>The Architect's <span class="accent">Tea Break</span></h1>
+            <p class="subtitle">A dedicated dashboard for my favorite designer</p>
+        </header>
+
+        <section class="weather-grid">
+            <div class="weather-card" id="weather-ratchaburi">
+                <p class="city-label">Ratchaburi</p>
+                <h3 class="temp">--°C</h3>
+                <p class="condition">Fetching...</p>
+            </div>
+            <div class="weather-connector">🧡</div>
+            <div class="weather-card" id="weather-pathum">
+                <p class="city-label">Pathum Thani</p>
+                <h3 class="temp">--°C</h3>
+                <p class="condition">Fetching...</p>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <p class="label">Total Progress</p>
+                <h2 id="days-count">0</h2>
+                <p class="unit">Days of Conversation</p>
+            </div>
+            <div class="stat-card">
+                <p class="label">Current Offset</p>
+                <h2 id="distance-val">0.0</h2>
+                <p class="unit">KM Distance Gap</p>
+            </div>
+        </section>
+
+        <section class="review-container">
+            <div class="section-header">
+                <span class="icon">📝</span>
+                <h3>Project Feedback Loop</h3>
+            </div>
+            <div class="review-item">
+                <div class="review-info">
+                    <strong>Visual Concept</strong>
+                    <span>Your smile is highly inspiring.</span>
+                </div>
+                <div class="score">A+</div>
+            </div>
+            <div class="review-item">
+                <div class="review-info">
+                    <strong>Structural Integrity</strong>
+                    <span>Supportive & reliable partner.</span>
+                </div>
+                <div class="score">Excellent</div>
+            </div>
+            <div class="review-item">
+                <div class="review-info">
+                    <strong>Communication Flow</strong>
+                    <span>Seamless connection, no lag.</span>
+                </div>
+                <div class="score">100%</div>
+            </div>
+            <div class="review-item">
+                <div class="review-info">
+                    <strong>Lighting Design</strong>
+                    <span>You brighten up my whole day.</span>
+                </div>
+                <div class="score">Brilliant</div>
+            </div>
+        </section>
+        <section class="post-it-wall">
+            <div class="section-header">
+                <span class="icon">📌</span>
+                <h3>Memo from Ratchaburi</h3>
+            </div>
+            <div id="latest-note" class="post-it">
+                <p class="note-content">Loading today's note...</p>
+                <span class="note-date">--/--/--</span>
+            </div>
+        </section>
+        <section class="interaction-zone">
+            <div class="tea-machine" id="tea-btn">
+                <div class="cup">
+                    <div class="tea-fill"></div>
+                </div>
+                <div class="btn-instruction">Click for a "Thai Tea" Boost 🧡</div>
+            </div>
+        </section>
+
+        <div id="toast-container"></div>
+
+        <footer>
+            <p>Built with ☕ & Code by Your CS Student</p>
+            <p class="location-tag">Ratchaburi ➔ Pathum Thani</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
