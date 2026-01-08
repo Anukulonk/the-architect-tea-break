@@ -73,3 +73,47 @@ h1 { font-family: 'Montserrat', sans-serif; font-size: 1.8rem; font-weight: 700;
     align-self: flex-end;
     opacity: 0.5;
 }
+
+.moodboard-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.polaroid-frame {
+    background: white;
+    padding: 10px 10px 25px 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.polaroid-frame img {
+    width: 150px;
+    height: auto;
+    display: block;
+    filter: sepia(20%);
+}
+
+.rotate-left { transform: rotate(-3deg); }
+.rotate-right { transform: rotate(2deg); margin-top: 20px; }
+
+.polaroid-frame:hover {
+    transform: scale(1.05) rotate(0deg);
+    z-index: 10;
+}
+
+.tape-strip {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 15px;
+    background: rgba(255, 248, 225, 0.6);
+    border-left: 1px dashed rgba(0,0,0,0.1);
+    border-right: 1px dashed rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
